@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;300;600&display=swap');
+@import "./reset";
+
+*,
+*:after,
+*:before {
+  box-sizing:border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+html, body{
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-family: var(--font-family);
+  font-size: var(--font-size-default);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}

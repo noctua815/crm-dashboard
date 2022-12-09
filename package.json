@@ -8,9 +8,10 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^0.1.18",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/vue-fontawesome": "^3.0.2",
     "gsap": "^3.10.4",
-    "imagesloaded": "^5.0.0",
     "vue": "^3.2.37",
     "vue-router": "^4.1.3"
   },
