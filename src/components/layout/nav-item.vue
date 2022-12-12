@@ -46,8 +46,12 @@ nav.nav(@mouseenter="mouseEnter" @mouseleave="mouseLeave" :class="{'show-full': 
 
 <style lang="scss" scoped>
 .nav {
-  position: relative;
-  grid-area: nav;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: rem(74);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

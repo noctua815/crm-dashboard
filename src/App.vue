@@ -2,12 +2,14 @@
 main.main
   section.main-section
     NavItem
-    section.content Content
+    section.content
+      router-view(v-slot="{Component}")
+        component(:is="Component")
 </template>
 
 <script setup>
 import NavItem         from '@/components/layout/nav-item.vue'
-import {ref, nextTick} from 'vue'
+import {ref} from 'vue'
 
 const loading = ref(true)
 </script>
@@ -21,11 +23,7 @@ const loading = ref(true)
 .main-section {
   width: 100vw;
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: rem(74) 1fr;
-  grid-template-areas: 'nav content';
 }
-
 
 
 </style>
