@@ -1,6 +1,7 @@
 <script setup>
 import PageLayout from '@/components/layout/page-layout.vue'
-import CardItem from '@/components/welcome/card-item.vue'
+import CardBlock from '@/components/welcome/card-block.vue'
+import InfoBlock from '@/components/welcome/info-block.vue'
 </script>
 
 <template lang="pug">
@@ -8,10 +9,10 @@ page-layout
   .home-section
     .welcome-section
       .welcome-section__title
-    .card-section
-      CardItem
     .summary-section Welcome
-    .info-section Welcome
+    .info-section
+      card-block
+      info-block
 </template>
 
 <style scoped lang="scss">
@@ -19,9 +20,9 @@ page-layout
   height: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-areas: 'welcome card'
+  grid-template-areas: 'welcome info'
   'summary info';
-  grid-template-columns: 1fr minmax(rem(300), 33%);
+  grid-template-columns: 1fr minmax(rem(400), 33%);
   grid-template-rows: 2fr 3fr;
 
   & > div {
@@ -33,9 +34,7 @@ page-layout
   background-color: var(--color-light-gray);
 }
 
-.card-section {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
+.info-section {
+  grid-area: info;
 }
 </style>

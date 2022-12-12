@@ -6,7 +6,7 @@ const card = reactive({
   number: '1111 2222 3333 9374',
   date: '09/24'
 })
-console.log('card', card)
+
 const protectedNumber = computed(() => {
   const len = card.number.length
   const lastPart = card.number.slice(len - 4, len)

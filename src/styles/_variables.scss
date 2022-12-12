@@ -9,10 +9,16 @@
   --color-gray: #E7E6EB;
   --color-light-gray: #F4F1EB;
   --color-light-peach: #F3D7CE;
+
+  --text-color-gray: #797979;
+  --text-color-red: #F46D5C;
+
   --font-size-default: 18px;
   --font-family: 'Martian Mono', monospace;
 
   --font-weight-normal: 300;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+
+  --border-default: 2px solid var(--color-dark);
 }
