@@ -1,6 +1,6 @@
 <script setup>
 import {reactive, computed} from 'vue'
-
+import {MaskForCard} from '@/helpers/maskForCard'
 const card = reactive({
   holder: 'Peter Crouch',
   number: '1111 2222 3333 9374',
@@ -8,13 +8,7 @@ const card = reactive({
 })
 
 const protectedNumber = computed(() => {
-  const len = card.number.length
-  const lastPart = card.number.slice(len - 4, len)
-  let firstPart = ''
-  for (let i = 0; i < 3; i++) {
-    firstPart += '*'.repeat(4) + ' '
-  }
-  return firstPart + lastPart
+  return MaskForCard(card.number, '*', ' ')
 })
 
 </script>

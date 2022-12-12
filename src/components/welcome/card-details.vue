@@ -1,6 +1,4 @@
 <script setup="">
-import {reactive, ref, computed} from 'vue'
-
 defineProps({
   details: {
     type: Array,

@@ -30,7 +30,7 @@ const menu = reactive([
 <style lang="scss" scoped>
 .card-block {
   padding: rem(36) rem(40);
-  margin-bottom: rem(72);
+  margin-bottom: rem(48);
 
   &__head {
     display: flex;

@@ -4,13 +4,11 @@ import {ref} from 'vue'
 const showFullMenu = ref(false)
 
 const mouseEnter = () => {
-  console.log('mouseOver', showFullMenu.value)
   if (showFullMenu.value) return
   showFullMenu.value = true
 }
 
 const mouseLeave = (e) => {
-  console.log('mouseLeave', showFullMenu.value)
   setTimeout(() => {
     showFullMenu.value = false
   }, 300)

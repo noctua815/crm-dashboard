@@ -9,12 +9,13 @@ import {
   faChartSimple,
   faGear,
   faBurst,
-  faEllipsis
+  faEllipsis,
+  faAngleDown
 } from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon}                                      from '@fortawesome/vue-fontawesome'
 import './styles/main.scss'
 
-library.add(faHome, faCreditCard, faChartSimple, faGear, faBurst, faEllipsis)
+library.add(faHome, faCreditCard, faChartSimple, faGear, faBurst, faEllipsis, faAngleDown)
 const app = createApp(App)
 
 app.use(router)
